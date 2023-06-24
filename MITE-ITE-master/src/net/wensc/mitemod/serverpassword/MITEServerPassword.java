@@ -34,10 +34,10 @@ public class MITEServerPassword extends AbstractMod {
     }
 
     public int modVerNum() {
-        return 4;
+        return 5;
     }
 
     public String modVerStr() {
-        return "0.0.4";
+        return "0.0.5";
     }
 }

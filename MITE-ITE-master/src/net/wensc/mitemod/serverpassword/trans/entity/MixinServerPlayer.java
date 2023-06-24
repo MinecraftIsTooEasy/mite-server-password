@@ -60,7 +60,7 @@ public abstract class MixinServerPlayer extends EntityPlayer implements ICraftin
     @Inject(method = "onUpdate", at = @At("HEAD"), cancellable = true)
     public void injectBeforeUpdate(CallbackInfo callbackInfo) {
         if(this.passwordStatus == PasswordStatus.IPDIFFERENT) {
-            this.passwordTimer = 200;
+            this.passwordTimer = 400;
             this.passwordStatus = PasswordStatus.IPDIFFWAIT;
         }
         if(this.passwordTimer > 0 && this.passwordStatus == PasswordStatus.IPDIFFWAIT) {
